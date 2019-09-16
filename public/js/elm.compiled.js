@@ -3869,10 +3869,6 @@ function _VirtualDom_dekey(keyedNode)
 		b: keyedNode.b
 	};
 }
-var elm$core$Basics$apL = F2(
-	function (f, x) {
-		return f(x);
-	});
 var elm$core$Basics$identity = function (x) {
 	return x;
 };
@@ -4058,6 +4054,10 @@ var elm$core$Array$treeFromBuilder = F2(
 		}
 	});
 var elm$core$Basics$add = _Basics_add;
+var elm$core$Basics$apL = F2(
+	function (f, x) {
+		return f(x);
+	});
 var elm$core$Basics$floor = _Basics_floor;
 var elm$core$Basics$gt = _Utils_gt;
 var elm$core$Basics$max = F2(
@@ -4365,7 +4365,6 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$html$Html$h1 = _VirtualDom_node('h1');
 var elm$html$Html$p = _VirtualDom_node('p');
-var elm$html$Html$strong = _VirtualDom_node('strong');
 var elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var elm$html$Html$text = elm$virtual_dom$VirtualDom$text;
 var elm$json$Json$Encode$string = _Json_wrap;
@@ -4391,22 +4390,14 @@ var author$project$HomePage$view = function (model) {
 				_List_Nil,
 				_List_fromArray(
 					[
-						elm$html$Html$text('Welcome to Dunder Mifflin!')
+						elm$html$Html$text('Welcome to Elm street bar!')
 					])),
 				A2(
 				elm$html$Html$p,
 				_List_Nil,
 				_List_fromArray(
 					[
-						elm$html$Html$text('Dunder Mifflin Inc. (stock symbol '),
-						A2(
-						elm$html$Html$strong,
-						_List_Nil,
-						_List_fromArray(
-							[
-								elm$html$Html$text('DMI')
-							])),
-						elm$html$Html$text(' \r\n                ) is a micro-cap regional paper and office \r\n                supply distributor with an emphasis on servicing \r\n                small-business clients.\r\n                ')
+						elm$html$Html$text('We offer you to checkout our top-quality beers')
 					]))
 			]));
 };
