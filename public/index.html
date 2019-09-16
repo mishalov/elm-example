@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <style>
+      .jumbotron {
+        background-color: #e6ffe6;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="elm-app-is-loaded-here"></div>
+
+    <script src="./js/elm.compiled.js"></script>
+    <script>
+      var app = Elm.HomePage.init({
+        node: document.getElementById("elm-app-is-loaded-here")
+      });
+    </script>
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace(
+          "HOST",
+          location.hostname
+        )
+      );
+      //]]>
+    </script>
+  </body>
+</html>
