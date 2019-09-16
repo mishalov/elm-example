@@ -16,11 +16,15 @@
 
   <body>
     <div id="elm-app-is-loaded-here"></div>
-
+    <div id="beer-list"></div>
     <script src="./js/elm.compiled.js"></script>
     <script>
-      var app = Elm.HomePage.init({
+      const topbar = Elm.HomePage.init({
         node: document.getElementById("elm-app-is-loaded-here")
+      });
+      console.log(Elm);
+      const beerlist = Elm.BeerList.init({
+        node: document.getElementById("beer-list")
       });
     </script>
     <script id="__bs_script__">
